@@ -1,0 +1,6 @@
+170721：
+按测试要求修改添加标志位；
+加入盲道拐弯程序
+
+2017.09.21
+程序中有中断，中断位置在path_planning.cpp中，gridresult_err.open(data_dir[7] + "/gridresult_err.txt", ios::app);处。解决方法：从gridresult_err.open(data_dir[7] + "/gridresult_err.txt", ios::app);开始，到gridresult.close();结束，注释掉。
